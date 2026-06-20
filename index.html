@@ -6,13 +6,45 @@
 
     <title>Visão de Quadra</title>
 
-    <link rel="icon" href="favicon.ico" sizes="32"/>
+    <link rel="icon" href="favicon.ico" sizes="64"/>
     <link rel="stylesheet" href="./src/styles/output.css">
+    <link rel="stylesheet" href="./src/styles/animations.css">
     <link rel="stylesheet" href="./src/styles/globals.css">
+    <link rel="stylesheet" href="./src/styles/hero.css">
+
+    <script type="module" src="./src/main.js"></script>
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">    
-        Visão de Quadra  
-    </h1>
+<body class="page-enter">
+    
+    <app-nav
+        btn-primary="Iniciar Quiz"
+        btn-primary-link="#quiz"
+        btn-secondary="Registrar-se"
+        btn-secondary-link="#register"
+        class="gap-7"
+        >
+    </app-nav>
+
+    <div class="background-image">
+        <img src="./src/assets/images/home-image.png" alt="Stephen Curry Homepage" class="image-home hero-image">
+    </div>
+    
+    <main class="page-enter hero">
+        <div class="hero-content">
+            <h1 class="hero-title font-bold text-justify">Aprimore seu Conhecimento Esportivo no Visão de Quadra</h1>
+            <p class="hero-description text-lg text-justify">Visão de Quadra aborda não só a Visão de um dos Esportes mais populares do mundo, mas concentra toda sua experiência em uma interação.</p>
+
+            <div class="hero-buttons">
+                <app-button-primary>
+                    <slot>Começar</slot>
+                </app-button-primary>
+                <app-button-secondary>
+                    <slot>FaQ Basquete</slot>
+                    <img src="https://img.icons8.com/272727/shadow/24/help.png" alt="up-left-arrow"/>
+                </app-button-secondary>
+            </div>
+        </div>
+
+    </main>
 </body>
 </html>

@@ -7,9 +7,14 @@
 	--letter-spacing-global: -0.03em;
 }
 
-html, body {
-	height: 100%;
-    padding-left: 2rem;
+html {
+	min-height: 100vh;
+	overflow-x: hidden;
+	position: relative;
+}
+
+main {
+	padding-left: 2rem;
     padding-right: 2rem;
 }
 

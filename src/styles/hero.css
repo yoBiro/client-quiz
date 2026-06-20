@@ -1,0 +1,50 @@
+.hero-image {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    height: 100vh;
+    width: auto;
+
+    object-fit: contain;
+
+    z-index: -1;
+
+    pointer-events: none;
+}
+
+.hero {
+    height: calc(100vh - 80px);
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    z-index: 2;
+}
+
+.hero-content h1 {
+    color: #272727;
+    font-size: clamp(2.5rem, 3.5vw, 5rem);
+    line-height: .95;
+}
+
+.hero-content p {
+    color: #a6a6a6;
+    line-height: .95;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 2.5rem;
+}
