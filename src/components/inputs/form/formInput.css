@@ -1,0 +1,21 @@
+input {
+    min-width: 24rem;
+    min-height: 2.5em;
+
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-gray-300);
+    background-color: var(--color-white);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: var(--color-gray-900);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    transition: 0.2s ease-in-out;
+}
+
+input:focus-within {
+    border-color: #FF7518;
+
+    box-shadow:
+        0 0 0 4px rgba(255,117,24,.15);
+}
