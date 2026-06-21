@@ -24,31 +24,63 @@
                 <h1 class="text-3xl font-bold mb-6">Registre sua conta</h1>
                 <p class="font-medium text-center">Insira seus principais dados para que possamos criar seu perfil e iniciar sua experiência.</p>
 
-                <form class="flex flex-col justify-center items-center gap-4 mt-6 w-[24rem]">
-                    <app-form-input type="text" name="name" placeholder="Insira seu nome" required></app-form-input>
-                    <app-form-input type="email" name="email" placeholder="Insira seu email" required></app-form-input>
-                    <app-form-input type="password" name="password" placeholder="Insira sua senha" required></app-form-input>
+                <form class="form flex flex-col justify-center items-center gap-4 mt-6 w-[24rem]">
+                    <input type="text" name="name" placeholder="Insira seu nome" required></input>
+                    <input type="email" name="email" placeholder="Insira seu email" required></input>
+                    <input type="password" name="password" placeholder="Insira sua senha" required></input>
                     <div class="flex space-between gap-4 w-full">
-                        <app-date-input date="birthdate" placeholder="Insira sua data de nascimento">
-                            <img
-                                slot="icon"
-                                src="https://img.icons8.com/272727/shadow/32/tear-off-calendar.png"
-                                alt=""
-                            >
-                        </app-date-input>
-                        <app-select-input name="state"></app-select-input>
+                                <div class="app-input-date">
+                                    <input type="date" name="birthdate">
+                                        <img
+                                                slot="icon"
+                                                src="https://img.icons8.com/272727/shadow/32/tear-off-calendar.png"
+                                                alt=""
+                                            >
+                                </div>
+                        <div class="select-input grid gap-2">
+                            <select name="state" id="">
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
+                        </div>
                     </div>
                     <fieldset class="gap-4 flex">
-                        <label class="label"><input type="radio" name="sexo" value="Masc" checked class="input">Masculino</label>
-                        <label class="label"><input type="radio" name="sexo" value="Fem" checked class="input" checked>Feminino</label>
-                        <label class="label"><input type="radio" name="sexo" value="Outro" checked class="input">Outro</label>
+                        <label class="label"><input type="radio" name="gender" value="Masc" class="input">Masculino</label>
+                        <label class="label"><input type="radio" name="gender" value="Fem" checked class="input">Feminino</label>
+                        <label class="label"><input type="radio" name="gender" value="Outro" class="input">Outro</label>
                     </fieldset>
 
-                    <app-button-primary type="submit" class="w-full">Registrar</app-button-primary>
+                    <button type="submit">Registrar</button>
                 </form>
             </div>
             
         </div>
     </main>
+    
+    <script type="module" src="./register.js"></script>
 </body>
 </html>

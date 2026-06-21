@@ -10,8 +10,10 @@ class AppButton extends HTMLElement {
     }
 
     connectedCallback(){
+        const type = this.getAttribute('type') || 'button'
+
         this.shadowRoot.innerHTML = `
-            <button class="app-button-primary">
+            <button class="app-button-primary" type="${type}">
                 <slot></slot>
             </button>
         `;

@@ -14,7 +14,6 @@ class AppDateInput extends HTMLElement {
         this.shadowRoot.innerHTML = `
         <div class="app-input-date">
             <input type="date">
-            <slot name="icon"></slot>
         </div>
         `;
     }
