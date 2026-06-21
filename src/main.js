@@ -4,3 +4,5 @@ import './components/nav/appNav.js';
 import './components/inputs/form/formInput.js'
 import './components/inputs/date/dateInput.js'
 import './components/inputs/select/selectInput.js'
+import './components/progress-bar/progressBar.js'
+import './components/question-card/questionCard.js';

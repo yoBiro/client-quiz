@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visão de Quadra - Quiz</title>
+
+    <link rel="icon" href="/favicon.ico" sizes="64"/>
+    <link rel="stylesheet" href="../../../styles/output.css">
+    <link rel="stylesheet" href="../../../styles/animations.css">
+    <link rel="stylesheet" href="../../../styles/globals.css">
+    <link rel="stylesheet" href="./quizResult.css">
+
+    <script type="module" src="../../../main.js"></script>
+</head>
+<body class="page-enter">
+    
+    <app-nav
+        btn-primary="Iniciar Quiz"
+        btn-primary-link="../quiz/quiz.html"
+        btn-secondary="Perfil"
+        btn-secondary-link="../profile/profile.html"
+        class="gap-7"
+        >
+    </app-nav>
+    <section class="result">
+            <main class="page-enter flex justify-center items-center">
+                <section class="border-[1.5px] border-[#A6A6A6] p-[2.6rem] rounded-lg flex flex-col gap-2 w-full">
+                        <div class="result-card">
+                            <h1 class="result-title font-bold">
+                                Resultado Final
+                            </h1>
+
+                            <div class="result-score" id="result-score">
+                            </div>
+
+                            <p class="result-message" id="result-message">
+                            </p>
+
+                            <div
+                                class="result-details"
+                                id="result-details">
+                            </div>
+
+                        </div>
+
+                    <app-button-primary class="restart-button" id="restart-button">
+                        Jogar Novamente
+                        <img src="https://img.icons8.com/shadow/FFFFFF/24/forward.png" alt="up-left-arrow"/>
+                    </app-button-primary>
+                </section>
+            </main>
+    </section>
+    <script type="module" src="./quizResult.js"></script>
+</body>
+</html>

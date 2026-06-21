@@ -13,7 +13,6 @@ class AppButton extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <button class="app-button-primary">
                 <slot></slot>
-                <img src="${this.getAttribute('icon') || 'https://img.icons8.com/shadow/FFFFFF/24/up-left-arrow.png" alt="up-left-arrow"/>'}
             </button>
         `;
     }
